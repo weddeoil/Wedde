@@ -1,7 +1,7 @@
 
 body {
   margin: 0;
-  font-family: 'Arial', sans-serif;
+  font-family: 'Segoe UI', sans-serif;
   background: #000;
   color: #FFD700;
 }
@@ -11,80 +11,59 @@ header {
   background: #111;
 }
 .logo {
-  width: 160px;
-  margin-bottom: 1rem;
+  width: 150px;
+  margin-bottom: 0.5rem;
 }
 h1, h2, h3 {
   color: #FFD700;
 }
-.hero {
-  text-align: center;
-  background: #222;
+main {
   padding: 1rem;
 }
-.carousel img {
-  width: 80%;
-  max-width: 400px;
-  margin: 0.5rem auto;
-  display: block;
-  border-radius: 10px;
-}
-.products {
-  padding: 1rem;
+.products .card-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   gap: 1rem;
-  background: #111;
+  justify-content: center;
 }
 .card {
   background: #222;
-  padding: 1rem;
   border-radius: 10px;
-  width: 300px;
+  padding: 1rem;
   text-align: center;
-  color: #FFD700;
+  width: 280px;
 }
 .card img {
   width: 100%;
   border-radius: 8px;
 }
-.reviews, .contact {
-  padding: 1rem;
-  background: #111;
-}
-ul {
+.reviews ul {
   padding-left: 1.5rem;
-}
-.line {
-  display: inline-block;
-  background: #00c300;
-  color: white;
-  padding: 0.5rem 1rem;
-  text-decoration: none;
-  border-radius: 5px;
 }
 footer {
   text-align: center;
   padding: 1rem;
   background: #000;
-  color: #777;
+  color: #888;
 }
-@media screen and (max-width: 600px) {
-  .products {
+@media (max-width: 600px) {
+  .products .card-list {
     flex-direction: column;
     align-items: center;
   }
 }
 
-.card-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
+.logo.small {
+  width: 100px;
+  margin-bottom: 0.5rem;
 }
-.card img, .carousel img {
-  object-fit: cover;
-  height: auto;
-  max-height: 300px;
+.about, .edu {
+  background: #111;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+.edu ul {
+  list-style: disc;
+  padding-left: 1.5rem;
 }
