@@ -76,3 +76,15 @@ footer {
     align-items: center;
   }
 }
+
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+.card img, .carousel img {
+  object-fit: cover;
+  height: auto;
+  max-height: 300px;
+}
